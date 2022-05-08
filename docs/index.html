@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Sphinx documentation’s documentation! &mdash; Sphinx documentation 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> Sphinx documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Sphinx documentation’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#module-user_interface.scripts.user_interface">User_Interface Module</a></li>
+<li><a class="reference internal" href="#core-module">Core Module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Sphinx documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to Sphinx documentation’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="welcome-to-sphinx-documentation-s-documentation">
+<h1>Welcome to Sphinx documentation’s documentation!<a class="headerlink" href="#welcome-to-sphinx-documentation-s-documentation" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-user_interface.scripts.user_interface">
+<span id="user-interface-module"></span><h1>User_Interface Module<a class="headerlink" href="#module-user_interface.scripts.user_interface" title="Permalink to this headline"></a></h1>
+<span class="target" id="module-user_interface"></span><p>This node implements an user interface</p>
+<p>Service:</p>
+<blockquote>
+<div><p>/mode</p>
+<p>/first_mode</p>
+<p>/controller</p>
+<p>/reach_goal</p>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="user_interface.scripts.user_interface.user">
+<span class="sig-prename descclassname"><span class="pre">user_interface.scripts.user_interface.</span></span><span class="sig-name descname"><span class="pre">user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/user_interface/scripts/user_interface.html#user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#user_interface.scripts.user_interface.user" title="Permalink to this definition"></a></dt>
+<dd><p>Function used like the main function where are initialized the node, set the NodeHandle for handling the communication with the ROS system</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user_interface.scripts.user_interface.userClk">
+<span class="sig-prename descclassname"><span class="pre">user_interface.scripts.user_interface.</span></span><span class="sig-name descname"><span class="pre">userClk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/user_interface/scripts/user_interface.html#userClk"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#user_interface.scripts.user_interface.userClk" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function that manage the settings of the parameters that must be sent to the core module
+by the using of the three services</p>
+</dd></dl>
+
+</div>
+<div class="section" id="core-module">
+<h1>Core Module<a class="headerlink" href="#core-module" title="Permalink to this headline"></a></h1>
+<p>Interface to control a robot. </p>
+<p><p>Subscribes to:</p>
+<p>° /odom</p>
+<p>° /scan</p>
+<p>° /move_base/feedback</p>
+<dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>Marco Limone </p>
+</dd>
+<dt><strong>Version</strong></dt><dd><p>1.0 </p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>29/03/2022</p>
+</dd>
+</dl>
+</p>
+<p><p>Publishes to:</p>
+<p>° /move_base/goal</p>
+<p>° /cmd_vel</p>
+<p>° move_base/cancel</p>
+</p>
+<p><p>Services :</p>
+<p>° /mode</p>
+<p>° /first_mode</p>
+<p>° /controller</p>
+
+ ° /raech_goal </p>
+<p>Description :</p>
+<p>we create a code that allow to control a robot in three different modes receiving commands by a user interface </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413currentStatusRKN14move_base_msgs22MoveBaseActionFeedback8ConstPtrE">
+<span id="_CPPv313currentStatusRKN14move_base_msgs22MoveBaseActionFeedback8ConstPtrE"></span><span id="_CPPv213currentStatusRKN14move_base_msgs22MoveBaseActionFeedback8ConstPtrE"></span><span id="currentStatus__move_base_msgs::MoveBaseActionFeedback::ConstPtrCR"></span><span class="target" id="my__global__user__interface_8cpp_1abe5ed94ffa1a53d79c5a39fa0f0b1b31"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">currentStatus</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">move_base_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MoveBaseActionFeedback</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413currentStatusRKN14move_base_msgs22MoveBaseActionFeedback8ConstPtrE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>currentStatus callback </p>
+<p>
+callback to have the goal id and allow its cancellation </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – goal id</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv410clbk_laserRKN11sensor_msgs9LaserScan8ConstPtrE">
+<span id="_CPPv310clbk_laserRKN11sensor_msgs9LaserScan8ConstPtrE"></span><span id="_CPPv210clbk_laserRKN11sensor_msgs9LaserScan8ConstPtrE"></span><span id="clbk_laser__sensor_msgs::LaserScan::ConstPtrCR"></span><span class="target" id="my__global__user__interface_8cpp_1aee9a579b4da1e9b84725ebcd86be52a7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clbk_laser</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">sensor_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">LaserScan</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410clbk_laserRKN11sensor_msgs9LaserScan8ConstPtrE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>clbk_laser callback </p>
+<p>
+calback to make the check on the distances and set the behavior of the robot for mode 3 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – distances of obstacles</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv412userCallbackRKN8nav_msgs8Odometry8ConstPtrE">
+<span id="_CPPv312userCallbackRKN8nav_msgs8Odometry8ConstPtrE"></span><span id="_CPPv212userCallbackRKN8nav_msgs8Odometry8ConstPtrE"></span><span id="userCallback__nav_msgs::Odometry::ConstPtrCR"></span><span class="target" id="my__global__user__interface_8cpp_1a44749a16f54c20256afe50535a768162"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">userCallback</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">nav_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Odometry</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412userCallbackRKN8nav_msgs8Odometry8ConstPtrE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>userCallback </p>
+<p>
+callback for the user interface and set the behavior of the robot for mode 1,2 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44mainiPPc">
+<span id="_CPPv34mainiPPc"></span><span id="_CPPv24mainiPPc"></span><span id="main__i.cPP"></span><span class="target" id="my__global__user__interface_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">main</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44mainiPPc" title="Permalink to this definition"></a><br /></dt>
+<dd><p>main </p>
+<p>main function </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47client2">
+<span id="_CPPv37client2"></span><span id="_CPPv27client2"></span><span id="client2__ros::ServiceClient"></span><span class="target" id="my__global__user__interface_8cpp_1ad5f18e67eb52639d4c703b1eef63aded"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">client2</span></span></span><a class="headerlink" href="#_CPPv47client2" title="Permalink to this definition"></a><br /></dt>
+<dd><p>declaration of service for the coordinates of mode1 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47client1">
+<span id="_CPPv37client1"></span><span id="_CPPv27client1"></span><span id="client1__ros::ServiceClient"></span><span class="target" id="my__global__user__interface_8cpp_1a594c25715cdc97c4374e727bf50b760f"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">client1</span></span></span><a class="headerlink" href="#_CPPv47client1" title="Permalink to this definition"></a><br /></dt>
+<dd><p>declaration of service for the set of the mode </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47client3">
+<span id="_CPPv37client3"></span><span id="_CPPv27client3"></span><span id="client3__ros::ServiceClient"></span><span class="target" id="my__global__user__interface_8cpp_1a75763392f9e258e79e4a1f38f91284e9"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">client3</span></span></span><a class="headerlink" href="#_CPPv47client3" title="Permalink to this definition"></a><br /></dt>
+<dd><p>declaration of service for the command to drive the robot in mode2 and mode3 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47client4">
+<span id="_CPPv37client4"></span><span id="_CPPv27client4"></span><span id="client4__ros::ServiceClient"></span><span class="target" id="my__global__user__interface_8cpp_1a5f7093b4691abd0c11ff1f7cdf331b87"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">client4</span></span></span><a class="headerlink" href="#_CPPv47client4" title="Permalink to this definition"></a><br /></dt>
+<dd><p>declaration of service for the reached goals of mode1 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv43pub">
+<span id="_CPPv33pub"></span><span id="_CPPv23pub"></span><span id="pub__ros::Publisher"></span><span class="target" id="my__global__user__interface_8cpp_1a350594df3e8f6948c8462edfd41ce086"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pub</span></span></span><a class="headerlink" href="#_CPPv43pub" title="Permalink to this definition"></a><br /></dt>
+<dd><p>publish coordinates for mode 1 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44pub2">
+<span id="_CPPv34pub2"></span><span id="_CPPv24pub2"></span><span id="pub2__ros::Publisher"></span><span class="target" id="my__global__user__interface_8cpp_1a2bef9e72d62d7ea1be803444f1ca7a6b"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pub2</span></span></span><a class="headerlink" href="#_CPPv44pub2" title="Permalink to this definition"></a><br /></dt>
+<dd><p>publish the velocity of the robot </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44pub3">
+<span id="_CPPv34pub3"></span><span id="_CPPv24pub3"></span><span id="pub3__ros::Publisher"></span><span class="target" id="my__global__user__interface_8cpp_1a0e8d412fdaada4745c72680b946d90a5"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pub3</span></span></span><a class="headerlink" href="#_CPPv44pub3" title="Permalink to this definition"></a><br /></dt>
+<dd><p>publish the id of the goal to cancel </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46mode_1">
+<span id="_CPPv36mode_1"></span><span id="_CPPv26mode_1"></span><span id="mode_1__i"></span><span class="target" id="my__global__user__interface_8cpp_1af67e01fd33ac95f3daddd3691c2b532c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode_1</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv46mode_1" title="Permalink to this definition"></a><br /></dt>
+<dd><p>global variables used as a flag to activate mode1 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46mode_2">
+<span id="_CPPv36mode_2"></span><span id="_CPPv26mode_2"></span><span id="mode_2__i"></span><span class="target" id="my__global__user__interface_8cpp_1a6c6676fd7223ff53e0bbeb206fa93222"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode_2</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv46mode_2" title="Permalink to this definition"></a><br /></dt>
+<dd><p>global variables used as a flag to activate mode2 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46mode_3">
+<span id="_CPPv36mode_3"></span><span id="_CPPv26mode_3"></span><span id="mode_3__i"></span><span class="target" id="my__global__user__interface_8cpp_1a90ceca9ce0ba5e72833bfc4215689dd3"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode_3</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv46mode_3" title="Permalink to this definition"></a><br /></dt>
+<dd><p>global variables used as a flag to activate mode3 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48command1">
+<span id="_CPPv38command1"></span><span id="_CPPv28command1"></span><span id="command1__i"></span><span class="target" id="my__global__user__interface_8cpp_1a3863508ee5814c6dfbf2670e5e21240c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">command1</span></span></span><a class="headerlink" href="#_CPPv48command1" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv41i">
+<span id="_CPPv31i"></span><span id="_CPPv21i"></span><span id="i__i"></span><span class="target" id="my__global__user__interface_8cpp_1acb559820d9ca11295b4500f179ef6392"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">i</span></span></span><a class="headerlink" href="#_CPPv41i" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44comm">
+<span id="_CPPv34comm"></span><span id="_CPPv24comm"></span><span id="comm__i"></span><span class="target" id="my__global__user__interface_8cpp_1ae87e7b46336c11d9c175763bd86e5f7e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">comm</span></span></span><a class="headerlink" href="#_CPPv44comm" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44mode">
+<span id="_CPPv34mode"></span><span id="_CPPv24mode"></span><span id="mode__i"></span><span class="target" id="my__global__user__interface_8cpp_1a1ea5d0cb93f22f7d0fdf804bd68c3326"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode</span></span></span><a class="headerlink" href="#_CPPv44mode" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46change">
+<span id="_CPPv36change"></span><span id="_CPPv26change"></span><span id="change__i"></span><span class="target" id="my__global__user__interface_8cpp_1ac710c7bfde8686dcdfa07f1800ab01b5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">change</span></span></span><a class="headerlink" href="#_CPPv46change" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46past_x">
+<span id="_CPPv36past_x"></span><span id="_CPPv26past_x"></span><span id="past_x__float"></span><span class="target" id="my__global__user__interface_8cpp_1ab2c5ad481dc069d227a85385c4eef23a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">past_x</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><a class="headerlink" href="#_CPPv46past_x" title="Permalink to this definition"></a><br /></dt>
+<dd><p>take into account the past x goal </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46past_y">
+<span id="_CPPv36past_y"></span><span id="_CPPv26past_y"></span><span id="past_y__float"></span><span class="target" id="my__global__user__interface_8cpp_1ab11b45a29d61acef4187a4d284743f4b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">past_y</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><a class="headerlink" href="#_CPPv46past_y" title="Permalink to this definition"></a><br /></dt>
+<dd><p>take into account the past y goal </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv410goal_count">
+<span id="_CPPv310goal_count"></span><span id="_CPPv210goal_count"></span><span id="goal_count__i"></span><span class="target" id="my__global__user__interface_8cpp_1ac9eda680c7287eef721295dd8c0a4ad6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_count</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv410goal_count" title="Permalink to this definition"></a><br /></dt>
+<dd><p>number of reached goals </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44flag">
+<span id="_CPPv34flag"></span><span id="_CPPv24flag"></span><span id="flag__i"></span><span class="target" id="my__global__user__interface_8cpp_1adf916204820072417ed73a32de1cefcf"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">flag</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv44flag" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46dist_x">
+<span id="_CPPv36dist_x"></span><span id="_CPPv26dist_x"></span><span id="dist_x__float"></span><span class="target" id="my__global__user__interface_8cpp_1acd75014bc8bce539ac767065c64eb751"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_x</span></span></span><a class="headerlink" href="#_CPPv46dist_x" title="Permalink to this definition"></a><br /></dt>
+<dd><p>distance x from the robot to the goal </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv46dist_y">
+<span id="_CPPv36dist_y"></span><span id="_CPPv26dist_y"></span><span id="dist_y__float"></span><span class="target" id="my__global__user__interface_8cpp_1a05d6ab6c01771b7443f3938a2395882c"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_y</span></span></span><a class="headerlink" href="#_CPPv46dist_y" title="Permalink to this definition"></a><br /></dt>
+<dd><p>distance y from the robot to the goal </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48tot_goal">
+<span id="_CPPv38tot_goal"></span><span id="_CPPv28tot_goal"></span><span id="tot_goal__i"></span><span class="target" id="my__global__user__interface_8cpp_1a64d8d483435010fcbe38f32c4a003e09"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tot_goal</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv48tot_goal" title="Permalink to this definition"></a><br /></dt>
+<dd><p>number of sended goals y the user </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47robot_x">
+<span id="_CPPv37robot_x"></span><span id="_CPPv27robot_x"></span><span id="robot_x__float"></span><span class="target" id="my__global__user__interface_8cpp_1a94f98c123703f2950c9a529dd67ca5c5"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_x</span></span></span><a class="headerlink" href="#_CPPv47robot_x" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47robot_y">
+<span id="_CPPv37robot_y"></span><span id="_CPPv27robot_y"></span><span id="robot_y__float"></span><span class="target" id="my__global__user__interface_8cpp_1ad10724c6ea6f6012098ff6267f6ffb65"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_y</span></span></span><a class="headerlink" href="#_CPPv47robot_y" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv42id">
+<span id="_CPPv32id"></span><span id="_CPPv22id"></span><span id="id__ss"></span><span class="target" id="my__global__user__interface_8cpp_1afd0d68c6d31ff249f3ae8662162663c3"></span><a class="reference internal" href="#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><a class="headerlink" href="#_CPPv42id" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4St">
+<span id="_CPPv3St"></span><span id="_CPPv2St"></span><span id="std"></span><span class="target" id="namespacestd"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">std</span></span></span><a class="headerlink" href="#_CPPv4St" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marco Limone.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
