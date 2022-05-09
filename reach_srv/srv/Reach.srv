@@ -1,0 +1,6 @@
+int8 mode
+int8 n_goal
+int8 reach_goal
+---
+int8 goals
+int8 reached

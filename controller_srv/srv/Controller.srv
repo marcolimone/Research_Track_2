@@ -1,0 +1,4 @@
+int8 command
+int8 direction_in
+---
+int8 direction_out
