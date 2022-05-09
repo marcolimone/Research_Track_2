@@ -1,0 +1,214 @@
+\hypertarget{my__global__user__interface_8cpp}{}\doxysection{src/my\+\_\+global\+\_\+user\+\_\+interface.cpp File Reference}
+\label{my__global__user__interface_8cpp}\index{src/my\_global\_user\_interface.cpp@{src/my\_global\_user\_interface.cpp}}
+
+
+Interface to control a robot.  
+
+
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sensor\+\_\+msgs/\+Laser\+Scan.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+msgs/\+Twist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}nav\+\_\+msgs/\+Odometry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action\+Goal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}actionlib\+\_\+msgs/\+Goal\+I\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action\+Feedback.\+h\char`\"{}}\newline
+Include dependency graph for my\+\_\+global\+\_\+user\+\_\+interface.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__global__user__interface_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{my__global__user__interface_8cpp_abe5ed94ffa1a53d79c5a39fa0f0b1b31}{current\+Status}} (const move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action\+Feedback\+::\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em current\+Status callback \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my__global__user__interface_8cpp_aee9a579b4da1e9b84725ebcd86be52a7}{clbk\+\_\+laser}} (const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em clbk\+\_\+laser callback \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my__global__user__interface_8cpp_a44749a16f54c20256afe50535a768162}{user\+Callback}} (const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em user\+Callback \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{my__global__user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em main \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Publisher \mbox{\hyperlink{my__global__user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}{pub}}
+\begin{DoxyCompactList}\small\item\em $<$declaretion of publishers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_a2bef9e72d62d7ea1be803444f1ca7a6b}\label{my__global__user__interface_8cpp_a2bef9e72d62d7ea1be803444f1ca7a6b}} 
+ros\+::\+Publisher \mbox{\hyperlink{my__global__user__interface_8cpp_a2bef9e72d62d7ea1be803444f1ca7a6b}{pub2}}
+\begin{DoxyCompactList}\small\item\em publish the velocity of the robot \end{DoxyCompactList}\item 
+ros\+::\+Publisher \mbox{\hyperlink{my__global__user__interface_8cpp_a0e8d412fdaada4745c72680b946d90a5}{pub3}}
+\begin{DoxyCompactList}\small\item\em publish the id of the goal to cancel \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_af67e01fd33ac95f3daddd3691c2b532c}\label{my__global__user__interface_8cpp_af67e01fd33ac95f3daddd3691c2b532c}} 
+int {\bfseries mode\+\_\+1} = 0
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_a6c6676fd7223ff53e0bbeb206fa93222}\label{my__global__user__interface_8cpp_a6c6676fd7223ff53e0bbeb206fa93222}} 
+int {\bfseries mode\+\_\+2} = 0
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_a90ceca9ce0ba5e72833bfc4215689dd3}\label{my__global__user__interface_8cpp_a90ceca9ce0ba5e72833bfc4215689dd3}} 
+int \mbox{\hyperlink{my__global__user__interface_8cpp_a90ceca9ce0ba5e72833bfc4215689dd3}{mode\+\_\+3}} = 0
+\begin{DoxyCompactList}\small\item\em global variables for input by user \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_ad732c0c7a8bcc3ecf8c7c360b382740d}\label{my__global__user__interface_8cpp_ad732c0c7a8bcc3ecf8c7c360b382740d}} 
+int {\bfseries command}
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_acb559820d9ca11295b4500f179ef6392}\label{my__global__user__interface_8cpp_acb559820d9ca11295b4500f179ef6392}} 
+int {\bfseries i}
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_ae87e7b46336c11d9c175763bd86e5f7e}\label{my__global__user__interface_8cpp_ae87e7b46336c11d9c175763bd86e5f7e}} 
+int {\bfseries comm}
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_a1ea5d0cb93f22f7d0fdf804bd68c3326}\label{my__global__user__interface_8cpp_a1ea5d0cb93f22f7d0fdf804bd68c3326}} 
+int {\bfseries mode}
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_ac710c7bfde8686dcdfa07f1800ab01b5}\label{my__global__user__interface_8cpp_ac710c7bfde8686dcdfa07f1800ab01b5}} 
+int {\bfseries change}
+\item 
+\mbox{\Hypertarget{my__global__user__interface_8cpp_afd0d68c6d31ff249f3ae8662162663c3}\label{my__global__user__interface_8cpp_afd0d68c6d31ff249f3ae8662162663c3}} 
+std\+::string {\bfseries id} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface to control a robot. 
+
+\begin{DoxyAuthor}{Author}
+Marco Limone 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/02/2022
+\end{DoxyDate}
+Subscribes to\+: ~\newline
+ ° /odom ° /scan ~\newline
+ ° /move\+\_\+base/feedback
+
+Publishes to\+: ~\newline
+ ° /move\+\_\+base/goal ° /cmd\+\_\+vel ° move\+\_\+base/cancel
+
+Description \+:
+
+we create a user interface that allow the user to control the robot in three different modes 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{my__global__user__interface_8cpp_aee9a579b4da1e9b84725ebcd86be52a7}\label{my__global__user__interface_8cpp_aee9a579b4da1e9b84725ebcd86be52a7}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!clbk\_laser@{clbk\_laser}}
+\index{clbk\_laser@{clbk\_laser}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{clbk\_laser()}{clbk\_laser()}}
+{\footnotesize\ttfamily void clbk\+\_\+laser (\begin{DoxyParamCaption}\item[{const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+clbk\+\_\+laser callback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & distances of obstacles\\
+\hline
+\end{DoxyParams}
+calback to make the check on the distances and set the behavior of the robot for mode 3 $<$search the min value for every sector of the laser scan
+
+$<$fright
+
+$<$front
+
+$<$fleft
+
+$<$left
+
+$<$go back if the wall in front of the robot is too near
+
+$<$turn left if the wall on the right is too near
+
+$<$turn right if the wall on the left is too near\mbox{\Hypertarget{my__global__user__interface_8cpp_abe5ed94ffa1a53d79c5a39fa0f0b1b31}\label{my__global__user__interface_8cpp_abe5ed94ffa1a53d79c5a39fa0f0b1b31}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!currentStatus@{currentStatus}}
+\index{currentStatus@{currentStatus}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{currentStatus()}{currentStatus()}}
+{\footnotesize\ttfamily void current\+Status (\begin{DoxyParamCaption}\item[{const move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action\+Feedback\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+current\+Status callback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & goal id\\
+\hline
+\end{DoxyParams}
+callback to have the goal id and allow its cancellation $<$put the id in a global variable\mbox{\Hypertarget{my__global__user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{my__global__user__interface_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!main@{main}}
+\index{main@{main}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+main 
+
+main function $<$ Initialize the nodes
+
+$<$request of the mode to use
+
+$<$setting of the mode using global variables
+
+$<$Define the publishers ~\newline
+
+
+$<$start Multi-\/threading\mbox{\Hypertarget{my__global__user__interface_8cpp_a44749a16f54c20256afe50535a768162}\label{my__global__user__interface_8cpp_a44749a16f54c20256afe50535a768162}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!userCallback@{userCallback}}
+\index{userCallback@{userCallback}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{userCallback()}{userCallback()}}
+{\footnotesize\ttfamily void user\+Callback (\begin{DoxyParamCaption}\item[{const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+user\+Callback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+callback for the user interface and set the behavior of the robot for mode 1,2 $<$M\+O\+DE 1\+: insert coordinates to allow the robot to reach them
+
+$<$Ask the user for a new position
+
+$<$publish the insert position
+
+$<$Ask the user if he want to chage mode or cancel the goal
+
+$<$cancel goal
+
+$<$cancel goal and pass to mode 2
+
+$<$cancel goal and pass to mode 3
+
+$<$Ask the user what the robot have to do or if he want to change mode
+
+$<$Ask the user what the robot have to do or if he want to change mode
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{my__global__user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}\label{my__global__user__interface_8cpp_a350594df3e8f6948c8462edfd41ce086}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!pub@{pub}}
+\index{pub@{pub}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily ros\+::\+Publisher pub}
+
+
+
+$<$declaretion of publishers 
+
+publish coordinates for mode 1 \mbox{\Hypertarget{my__global__user__interface_8cpp_a0e8d412fdaada4745c72680b946d90a5}\label{my__global__user__interface_8cpp_a0e8d412fdaada4745c72680b946d90a5}} 
+\index{my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}!pub3@{pub3}}
+\index{pub3@{pub3}!my\_global\_user\_interface.cpp@{my\_global\_user\_interface.cpp}}
+\doxysubsubsection{\texorpdfstring{pub3}{pub3}}
+{\footnotesize\ttfamily ros\+::\+Publisher pub3}
+
+
+
+publish the id of the goal to cancel 
+
+global variables for the mode to use 
