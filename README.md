@@ -8,7 +8,7 @@ This first assignment is basically divided into 3 parts:
 ## First part
 
 Personally I had to change a lot in the third assignment because I didn't have a real user interface separate from the core of the program, so I create a python script that is only a user interface. This user interface communicates with the main core through services (the main core would be the same script I already had previously where I removed the user interactions and added the communication with the services in their place).
-Having said that, to do the documentation I used Sphinx, in particular for the core of the program which is written in C ++ I used the JAVADOC style, while for the user interface written in python I used Google Docstrings.
+Having said that, to do the documentation I used Sphinx, in particular for the core of the program which is written in C ++ I used the JAVADOC style, while for the user interface written in python I used Google Docstrings. Link for the documentation: https://marcolimone.github.io/Research_Track_2/ .
 
 ## Second part
 
